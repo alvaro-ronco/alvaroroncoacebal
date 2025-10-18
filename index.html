@@ -3,98 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Single Page Bootstrap</title>
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <style>
-    section {
-      padding: 100px 0;
-      min-height: 100vh;
-    }
-    #home {
-      background-color: #f8f9fa;
-    }
-    #projects {
-      background-color: #e9ecef;
-    }
-    #contact {
-      background-color: #f8f9fa;
-    }
-  </style>
+  <meta name="description" content="Portfolio of Álvaro Ronco Acebal — showcasing full-stack web development projects built with React, Spring Boot, and modern technologies." />
+  <meta property="og:title" content="Álvaro Ronco Acebal | Full-Stack Developer Portfolio" />
+  <meta property="og:description" content="Junior Full-Stack Developer building responsive, performant applications using React, Spring Boot, and Java." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="images/icono.png">
+  <title>Álvaro Ronco Acebal | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
 
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#">MySite</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Álvaro Ronco Acebal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Me</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active fw-bold" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <main>
-    <section id="home" class="d-flex flex-column justify-content-center align-items-center text-center">
+    <section id="home" class="d-flex flex-column justify-content-center align-items-center text-center py-5">
       <div class="container">
-        <h1 class="display-4 mb-3">Welcome to My Portfolio</h1>
-        <p class="lead">This is my landing page presentation. I'm excited to share my projects and get in touch!</p>
-        <a href="#projects" class="btn btn-primary btn-lg mt-3">See My Projects</a>
+        <h1 class="fw-bold mb-3">Hi, I’m Álvaro Ronco Acebal 👋</h1>
+        <p class="lead mb-3">
+          Junior <strong>Full-Stack Developer</strong> passionate about creating clean, scalable, and user-centered applications.
+        </p>
+        <p class="text-secondary">
+          Focused on <strong>React</strong> and <strong>Spring Boot</strong> ecosystems, I enjoy transforming ideas into functional digital products.
+        </p>
+        <a href="#projects" class="btn btn-primary btn-lg mt-4">Explore My Work</a>
       </div>
     </section>
 
-    <section id="projects" class="text-center">
+    <!-- Projects -->
+    <section id="projects" class="text-center py-5 bg-light">
       <div class="container">
-        <h2 class="mb-5">Projects</h2>
+        <h2 class="mb-5 fw-semibold">My Projects</h2>
         <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card shadow-sm">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
               <div class="card-body">
-                <h5 class="card-title">Project One</h5>
-                <p class="card-text">Description of the first project goes here.</p>
-                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                <h5 class="card-title">Quick Ship — Spring App</h5>
+                <p class="card-text">
+                  REST API built with <strong>Spring Boot</strong>, featuring authentication, database persistence, and order tracking for a delivery platform.
+                </p>
+                <ul class="list-unstyled small text-muted mb-3">
+                  <li><i class="bi bi-check-circle"></i> Secure login</li>
+                  <li><i class="bi bi-check-circle"></i> PostgreSQL integration with JPA</li>
+                </ul>
+                <a href="https://github.com/alvaro-ronco/backEnd" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card shadow-sm">
+
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
               <div class="card-body">
-                <h5 class="card-title">Project Two</h5>
-                <p class="card-text">Description of the second project goes here.</p>
-                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Project Three</h5>
-                <p class="card-text">Description of the third project goes here.</p>
-                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                <h5 class="card-title">Quick Ship — React App</h5>
+                <p class="card-text">
+                  Frontend interface developed in <strong>React</strong>, connected to the Spring API. Includes routing, context-based state management, and responsive UI.
+                </p>
+                <ul class="list-unstyled small text-muted mb-3">
+                  <li><i class="bi bi-check-circle"></i> Dynamic routing with React Router</li>
+                  <li><i class="bi bi-check-circle"></i> Modular, reusable components</li>
+                </ul>
+                <a href="https://github.com/alvaro-ronco/frontEnd" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
               </div>
             </div>
           </div>
@@ -102,39 +91,168 @@
       </div>
     </section>
 
-    <section id="contact" class="d-flex justify-content-center align-items-center">
-      <div class="container" style="max-width: 600px;">
-        <h2 class="mb-4 text-center">Contact Me</h2>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Your name" required />
+    <!-- About Me -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img 
+              src="images/perfil.jpg" 
+              alt="Portrait of Álvaro Ronco Acebal" 
+              class="rounded-circle img-fluid shadow-sm"
+              style="width: 300px; height: 300px; object-fit: cover;"
+            >
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+
+          <div class="col-md-6">
+            <h2 class="mb-4 text-center text-md-start fw-semibold">About Me</h2>
+            <p class="text-center text-md-start mb-3">
+              I’m a <strong>junior full-stack developer</strong> who loves solving technical challenges through elegant, maintainable code. 
+              I specialize in building scalable web solutions.
+            </p>
+            <p class="text-center text-md-start mb-4">
+              I value <strong>clean architecture</strong>, <strong>collaboration</strong>, and continuous learning. 
+              In my projects, I’ve implemented RESTful APIs, optimized database queries, and designed responsive front-end interfaces. 
+              My goal is to contribute to teams that build meaningful, user-focused products while continually sharpening my skills.
+            </p>
+
+            <div class="text-center text-md-start mb-4">
+              <h6 class="fw-semibold mb-2">Tech Stack:</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-primary">React</span>
+                <span class="badge bg-primary">Spring Boot</span>
+                <span class="badge bg-primary">Java</span>
+                <span class="badge bg-primary">C#</span>
+                <span class="badge bg-primary">HTML5</span>
+                <span class="badge bg-primary">CSS3</span>
+                <span class="badge bg-primary">SQL</span>
+                <span class="badge bg-primary">Git / GitHub</span>
+                <span class="badge bg-primary">REST APIs</span>
+                <span class="badge bg-primary">Responsive Design</span>
+              </div>
+            </div>
+
+            <div class="text-center text-md-start mb-4">
+              <h6 class="fw-semibold mb-2">Soft Skills:</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary">Problem Solving</span>
+                <span class="badge bg-secondary">Teamwork</span>
+                <span class="badge bg-secondary">Adaptability</span>
+                <span class="badge bg-secondary">Attention to Detail</span>
+                <span class="badge bg-secondary">Continuous Learning</span>
+              </div>
+            </div>
+            <div class="text-center text-md-start mb-4">
+              <h6 class="fw-semibold mb-2">Languagues:</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-info">Spanish - Native Level</span>
+                <span class="badge bg-info">English - Oxford C1</span>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-5 text-center fw-semibold">Experience</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Internship — <a href="https://www.mimacom.com/">Mimacom</a> </h5>
+                <p class="text-muted mb-2">Duration: 3 months</p>
+                <ul>
+                  <li>Assisted in developing internal web applications using <strong>Spring Boot</strong>.</li>
+                  <li>Collaborated with senior developers on REST API design and database optimization.</li>
+                  <li>Wrote modular, reusable components and implemented unit testing.</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <button type="submit" class="btn btn-primary w-100">Send Message</button>
-        </form>
+
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">IT Project Enginear — <a href="https://www.mecalux.es/">Mecalux</a></h5>
+                <p class="text-muted mb-2">Duration: 07/2025 - Now </p>
+                <ul>
+                  <li>Developed and maintained customer-facing applications using <strong>C#</strong>, delivering solutions tailored to client requirements.</li>
+                  <li>Designed and implemented efficient, scalable features to address diverse client needs.</li>
+                  <li>Collaborated in agile sprints, participated in code reviews, and engaged in cross-functional team discussions.</li>
+                  <li>Performed bug fixes, refactoring, and thorough documentation to ensure code quality and maintainability.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Education -->
+    <section id="education" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-5 text-center fw-semibold">Education</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">DAM — Multiplatform Application Development</h5>
+                <p class="text-muted mb-2">Finished in 2024</p>
+                <ul>
+                  <li>In: CIFP de los Sectores Industriales — Focused on developing cross-platform applications for desktop, mobile, and web environments.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">DAW — Web Application Development</h5>
+                <p class="text-muted mb-2">Finished in 2025</p>
+                <ul>
+                  <li>In: CIFP de los Sectores Industriales — Specialized in building modern web applications using HTML, CSS, JavaScript, and backend technologies.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Bootstrap JS Bundle -->
+  <footer class="bg-black text-white text-center text-lg-start border-top mt-5 py-4">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 mb-3 mb-lg-0">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a href="#home" class="text-white text-decoration-none fw-semibold">Home</a></li>
+            <li class="list-inline-item"><a href="#projects" class="text-white text-decoration-none fw-semibold">Projects</a></li>
+            <li class="list-inline-item"><a href="#contact" class="text-white text-decoration-none fw-semibold">About Me</a></li>
+            <li class="list-inline-item"><a href="#experience" class="text-white text-decoration-none fw-semibold">Experience</a></li>
+            <li class="list-inline-item"><a href="#education" class="text-white text-decoration-none fw-semibold">Education</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://github.com/alvaro-ronco" target="_blank" class="text-white fs-4"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/alvaroroncoacebal/" target="_blank" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:alvaro.roncoacebal@gmail.com" target="_blank" class="text-white fs-4"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4 border-light" />
+      <p class="mb-0 small text-white">© 2025 Álvaro Ronco Acebal</p>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Enable smooth scroll for anchor links in navbar
-    document.querySelectorAll('a.nav-link').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
 </body>
 </html>

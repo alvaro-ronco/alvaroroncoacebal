@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #212529;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  background-image: url('../images/home-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#home .container {
+  position: relative;
+  z-index: 1;
+}
+
+footer{
+  min-height: 20vh;
+}
+
+
+a {
+  text-decoration: none;
+}
